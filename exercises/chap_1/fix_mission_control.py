@@ -17,3 +17,21 @@ Return a string in this format:
 
 "{title}: {name}"
 '''
+
+station_name = "Orion Gate"
+
+
+def make_badge(name, title):
+    return f"{title}: {name}"
+
+
+def add_supply(total, delivered):
+    return total + delivered
+
+
+def spend_credits(balance, cost):
+    return balance - cost
+
+
+def station_alert(captain):
+    return f"Captain {captain} report to {station_name}"
