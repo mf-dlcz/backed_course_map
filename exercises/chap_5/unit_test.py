@@ -19,7 +19,7 @@ def total_xp(level, xp_to_add):
     return xp
 
 
-from main import total_xp
+#from main import total_xp
 
 run_cases = [
     (1, 200, 300),
