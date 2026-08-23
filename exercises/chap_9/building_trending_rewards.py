@@ -15,9 +15,6 @@ Return the completed list. If the range is empty, return an empty list.
 
 def build_training_rewards(start_step, stop_step, points_per_step):
     rewards = []
-
-    if start_step == 0:
-        return rewards
     
     for step in range(start_step, stop_step):
         reward = step * points_per_step
