@@ -22,3 +22,17 @@ copy_count is zero or negative
 
 """
 
+def build_inventory_labels(item_names, copy_count):
+    labels = []
+
+    if copy_count <= 0:
+        return labels
+
+    for item_index in range(len(item_names)):
+        item_name = item_names[item_index]
+        labels.append(item_name)
+
+        for copy_number in range(1, copy_count + 1):
+            labels.append(f"{item_name}-{copy_number}")
+
+    return labels
