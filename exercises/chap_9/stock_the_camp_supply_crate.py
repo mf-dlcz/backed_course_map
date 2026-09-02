@@ -26,3 +26,14 @@ Use loops, list indexing, and .append().
 
 """
 
+def stock_camp_supplies(item_names, quantities):
+    new_list = []
+    
+    for item in range(len(item_names)):
+        item_name = item_names[item]
+        item_amount = quantities[item]
+        
+        for repetition in range(item_amount):
+            new_list.append(item_name)
+            
+    return new_list
