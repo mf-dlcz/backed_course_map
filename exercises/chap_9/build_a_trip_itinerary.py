@@ -22,3 +22,10 @@ build_itinerary(["Tokyo"], 3)
 
 """
 
+def build_itinerary(destinations, repeat_count):
+    new_destinations = []
+
+    for destination in destinations:
+        for count in range(repeat_count):
+            new_destinations.append(destination)
+    return new_destinations
