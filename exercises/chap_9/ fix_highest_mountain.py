@@ -17,3 +17,9 @@ find_highest_elevation([-80, -25, -140])
 
 """
 
+def find_highest_elevation(elevations):
+    highest = float("-inf")
+    for elevation in elevations:
+        if elevation > highest:
+            highest = elevation
+    return highest
