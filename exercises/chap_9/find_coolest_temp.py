@@ -19,3 +19,11 @@ print(find_coolest_temperature([-2, -9, 3, 0]))
 
 
 """
+
+def find_lowest_temperature(temperatures):
+    lowest_temp = float("inf")
+
+    for temp in temperatures:
+        if temp < lowest_temp:
+            lowest_temp = temp
+    return lowest_temp
