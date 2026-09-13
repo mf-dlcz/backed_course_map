@@ -21,3 +21,9 @@ print(slice_route(route))
 
 """
 
+def slice_route(route):
+    route_one = route[:2]
+    route_two = route[2:-2]
+    route_three = route[-2:]
+    
+    return [route_one, route_two, route_three]
