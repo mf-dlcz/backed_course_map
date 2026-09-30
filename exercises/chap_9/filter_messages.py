@@ -45,3 +45,25 @@ INSTRUCTIONS:
 
 """
 
+def filter_messages(messages):
+    dang_removed_list = []
+    counts_of_dang_removed = []
+    
+    for message in range(len(messages)):
+        count = 0
+        good_words = []
+        words = messages[message].split()
+
+        for word in words:
+            if word == "dang":
+                count += 1
+            
+            if word != "dang":
+                good_words.append(word)
+        
+        sentence = " ".join(good_words)
+
+        dang_removed_list.append(sentence)
+        counts_of_dang_removed.append(count)
+
+    return dang_removed_list, counts_of_dang_removed
