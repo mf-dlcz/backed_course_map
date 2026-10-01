@@ -14,3 +14,9 @@ Use the slice syntax with a "step" to create two new lists from the players list
 Don't be afraid to consult your spellbook for list slicing help!
 
 """
+
+def get_even_and_odd_teams(players):
+    odd_players = players[1::2]
+    even_players = players[::2]
+
+    return (even_players, odd_players)
