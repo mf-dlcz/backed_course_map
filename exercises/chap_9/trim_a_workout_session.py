@@ -24,3 +24,7 @@ The original list should not be changed. Either count may be 0.
 
 """
 
+def trim_session(activities, warmup_count, cooldown_count):
+    stop = len(activities) - cooldown_count
+    
+    return activities[warmup_count:stop]
