@@ -45,4 +45,10 @@ total_until_goal([4, 3, 5, 2], 10)
 """
 
 def find_first_at_least(numbers, target):
-    
+    index = 0
+    while index < len(numbers) and numbers[index] < target:
+        index += 1
+    if index < len(numbers):
+        return index
+    else:
+        return -1
