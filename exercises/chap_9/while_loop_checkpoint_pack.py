@@ -60,3 +60,16 @@ def count_before_word(words, stop_word):
     while counter < len(words) and words[counter] != stop_word:
         counter += 1
     return counter
+
+
+def total_until_goal(scores, goal):
+    total = 0
+    index = 0
+
+    while index < len(scores) and total < goal:
+        total += scores[index]
+        index += 1
+    
+    if total > goal:
+        return total
+    return total
