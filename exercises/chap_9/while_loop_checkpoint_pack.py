@@ -52,3 +52,11 @@ def find_first_at_least(numbers, target):
         return index
     else:
         return -1
+
+
+def count_before_word(words, stop_word):
+    counter = 0
+    
+    while counter < len(words) and words[counter] != stop_word:
+        counter += 1
+    return counter
